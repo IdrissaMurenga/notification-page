@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,500;0,600;0,800;1,500;1,600&display=swap');
+body{
+    background-color: hsl(210, 60%, 98%);
+}
+main{
+    padding: 1rem;
+}
+.header,.notif,.sec_notif,.notification,.inner_txt{
+    display: flex;
+}
+.notif,.sec_notif,.notification{
+    align-items: center;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.header{
+    justify-content: space-between;
+    padding-bottom: 2rem;
+}
+h1{
+    
+    font-weight: 800;
+    font-size: 1.2rem;
+}
+h2{
+    font-size: 1rem;
+}
+.number{
+    margin-left: 0.5rem;
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    color: white;
+    background-color: hsl(219, 85%, 26%);
+}
+img{
+    width: 4rem;
+}
+h6{
+    padding-top: 5px;
+}
+p,h2,h6{
+    font-weight: 500;
+    font-size: 16px;
+    color: hsl(219, 14%, 63%);
+}
+p,h1,h2,h6{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+.sec_p{
+    color: hsl(219, 12%, 42%);
+}
+.thd_p{
+    color: hsl(219, 85%, 26%);
+}
+.sec_p,.thd_p{
+    font-weight: 800;
+}
+.name{
+    font-weight: 800;
+    margin-right: 5px;
+    color: black;
+}
+.notif{
+    padding: 1rem 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+.bg_notif{
+    background-color: hsl(205, 33%, 90%);
+}
+.first_notifications:nth-child(1){
+    margin-bottom: 2rem;
+}
+
+.card{
+    width: 17rem;
+    padding: 1rem;
+    margin-left: 5rem;
+    margin-bottom: 3rem;
+    line-height: 1.5;
+    border-radius: 5px;
+    border: 1px solid hsl(219, 14%, 63%);
+}
+.card:hover{
+    background-color: hsl(211, 68%, 94%);
+    border: none;
+}
+.inner_txt{
+    gap: 1rem
+}
+.chess_img{
+    width: 2.5rem;
+}
+h2,.sec_p,.thd_p,.name,.card,.chess_img{
+    cursor: pointer;
+}
+h2:hover,
+.name:hover,
+.sec_p:hover{
+    color: hsl(219, 85%, 26%);
+}
+
+@media (width > 900px){
+    main{
+        max-width: 45rem;
+        margin-inline: auto;
+        margin-block: 1rem;
+        padding: 2rem 3rem;
+        border-radius: 10px;
+        background-color: white;
+    }
+    .card{
+        width: 35rem;
+        margin-left: 4rem;
+        padding: 1rem;
+    }
+    .chess_img{
+        margin-left: 8rem;
+    }
+}
